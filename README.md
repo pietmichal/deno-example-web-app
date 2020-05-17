@@ -33,8 +33,8 @@ Starts the app process itself and executes e2e tests.
 
 `deno --allow-run --allow-net app.e2e.ts` 
 
-:shipit:
-
 ### Bundling
 
 `deno bundle app.ts output.js` - Creates output.js file. It has top level async in it. Using babel or something similar could make it work in nodejs.
+
+:shipit:
