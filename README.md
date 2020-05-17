@@ -6,6 +6,8 @@ From my observation, programmers can start using TypeScript, TDD, acceptance tes
 
 If I wasn't going for vanilla implementation then I'd look for higher-level abstraction for http endpoints.
 
+Also, testing part of standard library would benefit from spies and auto mocking utils.
+
 This is a web app that allows transfering fictional money between accounts.
 
 I'm not planning to touch this project again unless, for some odd reason, there is demand. ¯\_(ツ)_/¯
