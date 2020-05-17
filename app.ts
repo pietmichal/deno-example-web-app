@@ -32,7 +32,6 @@ for await (const req of s) {
   // Note: Not the nicest way to handle post requests ;)
   if (req.method === "POST") {
     if (req.url === "/transferMoney") {
-        
       // copied from deno docs
       const buf = new Uint8Array(req.contentLength!);
       let bufSlice = buf;
@@ -57,7 +56,7 @@ for await (const req of s) {
         if (fromAccount && toAccount) {
           try {
             transactionService.transferMoney(amount, fromAccount, toAccount);
-            req.respond({status: 200});
+            req.respond({ status: 200 });
           } catch (e) {
             if (e.message === "Sender has insufficient funds.") {
               req.respond({ status: 400 });
